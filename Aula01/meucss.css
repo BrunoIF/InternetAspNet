@@ -1,0 +1,28 @@
+﻿body {
+}
+
+h2{
+    color: #ff0000;
+    font-family: 'Gill Sans';
+    font-size: 50px;
+}
+
+h3{
+    color: #369;
+    font-family: 'Calibri';
+    font-size: 30px;
+}
+
+.resultados{
+    color: #4cd542;
+    border: 1px dotted #666;
+    font-weight: bold;
+}
+
+.valores{
+    color: #852626;
+    width: 300px;
+    font-family: Calibri;
+    font-size: 25px;
+    padding: 5px;
+}

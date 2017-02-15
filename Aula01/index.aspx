@@ -8,12 +8,12 @@
 </head>
 <body>
     <form id="form1" runat="server">
-    <div>
-        <h2>Usando Asp.Net</h2>
-        <h3>Entrada de valores:</h3>
-        <p>&nbsp;</p>
+        <div>
+            <h2>Usando Asp.Net</h2>
+            <h3>Entrada de valores:</h3>
+            <p>&nbsp;</p>
 
-    </div>
+        </div>
         <p>
             Valor 1:
             <asp:TextBox ID="txtValor1" runat="server"></asp:TextBox>
@@ -26,7 +26,8 @@
             <asp:Button ID="btnCalcular" runat="server" OnClick="btnCalcular_Click" Text="Calcular" />
         </p>
         <p>
-            Resultado da soma: <asp:Label ID="lblSoma" runat="server"></asp:Label>
+            Resultado da soma:
+            <asp:Label ID="lblSoma" runat="server"></asp:Label>
         </p>
         <p>
             Resultado da subtração:
