@@ -23,26 +23,26 @@
             <asp:TextBox ID="txtValor2" runat="server"></asp:TextBox>
         </p>
         <p>
-            <asp:Button ID="btnCalcular" runat="server" Text="Calcular" />
+            <asp:Button ID="btnCalcular" runat="server" OnClick="btnCalcular_Click" Text="Calcular" />
         </p>
         <p>
-            Resultado da soma:
-            <asp:Label ID="lblSoma" runat="server" Text="Label"></asp:Label>
+            Resultado da soma: <asp:Label ID="lblSoma" runat="server"></asp:Label>
         </p>
         <p>
             Resultado da subtração:
-            <asp:Label ID="lblSubtracao" runat="server" Text="Label"></asp:Label>
+            <asp:Label ID="lblSubtracao" runat="server"></asp:Label>
         </p>
         <p>
-            Resultado da multiplicação: <asp:Label ID="lblMultiplicacao" runat="server" Text="Label"></asp:Label>
+            Resultado da multiplicação:
+            <asp:Label ID="lblMultiplicacao" runat="server"></asp:Label>
         </p>
         <p>
             Resultado da divisão:
-            <asp:Label ID="lblDivisao" runat="server" Text="Label"></asp:Label>
+            <asp:Label ID="lblDivisao" runat="server"></asp:Label>
         </p>
         <p>
             Resultado do módulo:
-            <asp:Label ID="lblModulo" runat="server" Text="Label"></asp:Label>
+            <asp:Label ID="lblModulo" runat="server"></asp:Label>
         </p>
     </form>
 </body>
