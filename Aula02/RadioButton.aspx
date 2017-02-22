@@ -15,15 +15,16 @@
         <asp:RadioButton ID="rdbBanda2" runat="server" GroupName="Bandas" Text="Pink Floyd" />
         <asp:RadioButton ID="rdbBanda3" runat="server" GroupName="Bandas" Text="Queen" />
         <asp:Button ID="btnBandas" runat="server" OnClick="btnBandas_Click" Text="Conferir" />
-    <h3>Piores coisas do carnaval<asp:RadioButtonList ID="rblCarnaval" runat="server" AutoPostBack="True" RepeatDirection="Horizontal">
+    <h3>Piores coisas do carnaval</h3>
+        <asp:RadioButtonList ID="rblCarnaval" runat="server" AutoPostBack="True" OnSelectedIndexChanged="rblCarnaval_SelectedIndexChanged" RepeatDirection="Horizontal">
         <asp:ListItem Value="1">Nelson Rubens</asp:ListItem>
         <asp:ListItem Value="2">Ivete Sangalo</asp:ListItem>
         <asp:ListItem Value="3">Ludmilla</asp:ListItem>
         <asp:ListItem Value="4">Ficar sem aula do Israel</asp:ListItem>
         </asp:RadioButtonList>
-        </h3>
+        
         <p>
-            <asp:Label ID="lblCarnaval" runat="server" Text="Label"></asp:Label>
+            <asp:Label ID="lblCarnaval" runat="server"></asp:Label>
         </p>
     </form>
 </body>
