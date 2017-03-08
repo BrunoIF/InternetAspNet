@@ -19,6 +19,22 @@
 &nbsp;<asp:Button ID="btnComidinhas" runat="server" OnClick="btnComidinhas_Click" Text="Mostrar Comidas" />
 
 
+        <br />
+        <br />
+        <h3>Games Lindinhos</h3>
+        <asp:CheckBoxList ID="cblGames" runat="server" AutoPostBack="True" OnSelectedIndexChanged="cblGames_SelectedIndexChanged" RepeatDirection="Horizontal">
+            <asp:ListItem>God of War</asp:ListItem>
+            <asp:ListItem>FIFA17</asp:ListItem>
+            <asp:ListItem>Black Ops</asp:ListItem>
+            <asp:ListItem>Last of Us</asp:ListItem>
+            <asp:ListItem>Horizon: Zero Dawn</asp:ListItem>
+        </asp:CheckBoxList>
+
+
+        <br />
+        <asp:Label ID="lblGames" runat="server"></asp:Label>
+
+
     </div>
     </form>
 </body>

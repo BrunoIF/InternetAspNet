@@ -30,6 +30,7 @@ public partial class RadioButton : System.Web.UI.Page
 
     protected void rblCarnaval_SelectedIndexChanged(object sender, EventArgs e)
     {
+        // .SelectedValue -> Valor Selecionado
         if (rblCarnaval.SelectedValue == "1")
         {
             lblCarnaval.Text = "É uma droga...fim de vida inteligente";
