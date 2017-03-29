@@ -29,6 +29,20 @@ public partial class index : System.Web.UI.Page
     {
         // Botão para ir para a view 2
         MultiView1.ActiveViewIndex = 2;
+
+        // Recuperamos os dados das views e calculamos os valores
+        string nomeCliente = txtNome.Text;
+        string nomeProduto = ddlProduto.SelectedItem.Text;
+        int quantidade = Convert.ToInt16(ddlQtdProduto.SelectedItem.Text);
+        double valorUnitario = Convert.ToDouble(ddlProduto.SelectedValue);
+        double valorTotal = quantidade * valorUnitario;
+
+        // exibir na view 3 que é a 2, os dados
+        lblValorPagar.Text = valorTotal.ToString("c2");
+        lblNomeCliente.Text = nomeCliente;
+        lblNomeProduto.Text = nomeProduto;
+            
+
     }
 
     protected void btnMulti3Anterior_Click(object sender, EventArgs e)
@@ -41,6 +55,20 @@ public partial class index : System.Web.UI.Page
     {
         // Botão para voltar para a view 0
         MultiView1.ActiveViewIndex = 0;
+
+        // Limpar os Campos
+        lblNomeProduto.Text = "";
+        lblNomeCliente.Text = "";
+        lblValorPagar.Text = "";
+        lblValorUnitario.Text = "";
+        txtEmail.Text = "";
+        txtNome.Text = "";
+        txtConfirmaEmail.Text = "";
+        txtEndereco.Text = "";
+        ddlProduto.SelectedIndex = 0;
+        ddlQtdProduto.SelectedIndex = 0;
+        txtNome.Focus();
+
     }
 
     protected void ddlProduto_SelectedIndexChanged(object sender, EventArgs e)
@@ -50,12 +78,30 @@ public partial class index : System.Web.UI.Page
         string nomeProduto = ddlProduto.SelectedItem.Text;
         if (valor == -1)
         {
-            Response.Write("<script>alert('Favor selecionar um item')</script>");
+            Response.Write("<script>alert('Favor selecionar um item.')</script>");
             ddlProduto.Focus();
         }
         else
         {
             lblValorUnitario.Text = valor.ToString("c2");
+        }
+    }
+
+    protected void ddlQtdProduto_SelectedIndexChanged(object sender, EventArgs e)
+    {
+        int quantidade = Convert.ToInt16(ddlQtdProduto.SelectedIndex);
+        if (quantidade == 0)
+        {
+            Response.Write("<script>alert('Favor selecionar uma quantidade.')</script>");
+            btnMulti2Proximo.Enabled = false;
+            btnMulti2Anterior.Enabled = false;
+            lblValorUnitario.Text = "";
+            ddlQtdProduto.Focus();
+        }
+        else
+        {
+            btnMulti2Proximo.Enabled = true;
+            btnMulti2Anterior.Enabled = true;
         }
     }
 }

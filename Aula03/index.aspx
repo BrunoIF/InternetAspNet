@@ -53,7 +53,7 @@
                 <br />
                 <br />
                 Quantidade:
-                <asp:DropDownList ID="ddlQtdProduto" runat="server">
+                <asp:DropDownList ID="ddlQtdProduto" runat="server" AutoPostBack="True" OnSelectedIndexChanged="ddlQtdProduto_SelectedIndexChanged">
                     <asp:ListItem Value="-1">Selecione uma quantidade</asp:ListItem>
                     <asp:ListItem>1</asp:ListItem>
                     <asp:ListItem>2</asp:ListItem>
@@ -87,7 +87,7 @@
                 <br />
                 <asp:Button ID="btnMulti3Anterior" runat="server" OnClick="btnMulti3Anterior_Click" Text="&lt;&lt; Anterior" />
                 <asp:Button ID="btnMulti3Inicio" runat="server" OnClick="btnMulti3Inicio_Click" Text="Novo Produto" />
-                <asp:Button ID="btnImprimir" runat="server" Text="Imprimir Pedido" />
+                <asp:Button ID="btnImprimir" runat="server" Text="Imprimir Pedido" OnClientClick="&lt;script&gt;print()&lt;/script&gt;" />
             </asp:View>
             <br />
             <br />
