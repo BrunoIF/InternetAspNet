@@ -27,12 +27,14 @@
                 <br />
                 Email:
                 <asp:TextBox ID="txtEmail" runat="server"></asp:TextBox>
-                &nbsp;<asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtEmail" ErrorMessage="Campo vazio." Font-Bold="True" Font-Names="Arial" Font-Size="15pt" ForeColor="Red"></asp:RequiredFieldValidator>
+                &nbsp;<asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtEmail" Display="Dynamic" ErrorMessage="Campo vazio." Font-Bold="True" Font-Names="Arial" Font-Size="15pt" ForeColor="Red"></asp:RequiredFieldValidator>
+&nbsp;<asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="txtEmail" ErrorMessage="Email inválido." Font-Bold="True" Font-Names="Arial" Font-Size="15pt" ForeColor="Red" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
                 <br />
                 <br />
                 Confirmar Email:
                 <asp:TextBox ID="txtConfirmaEmail" runat="server"></asp:TextBox>
-                &nbsp;<asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="txtConfirmaEmail" ErrorMessage="Campo vazio." Font-Bold="True" Font-Names="Arial" Font-Size="15pt" ForeColor="Red"></asp:RequiredFieldValidator>
+                &nbsp;<asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="txtConfirmaEmail" Display="Dynamic" ErrorMessage="Campo vazio." Font-Bold="True" Font-Names="Arial" Font-Size="15pt" ForeColor="Red"></asp:RequiredFieldValidator>
+                &nbsp;<asp:CompareValidator ID="CompareValidator1" runat="server" ControlToCompare="txtEmail" ControlToValidate="txtConfirmaEmail" ErrorMessage="Emails diferentes." Font-Bold="True" Font-Names="Arial" Font-Size="15pt" ForeColor="Red"></asp:CompareValidator>
                 <br />
                 <br />
                 <asp:Button ID="btnMulti1" runat="server" OnClick="btnMulti1_Click" Text="Próximo &gt;&gt;" />
