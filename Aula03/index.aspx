@@ -17,14 +17,22 @@
                 <br />
                 Nome:
                 <asp:TextBox ID="txtNome" runat="server"></asp:TextBox>
+                &nbsp;<asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtNome" ErrorMessage="Campo vazio." Font-Bold="True" Font-Names="Arial" Font-Size="15pt" ForeColor="Red"></asp:RequiredFieldValidator>
                 <br />
                 <br />
                 Endereço Completo:
                 <asp:TextBox ID="txtEndereco" runat="server"></asp:TextBox>
+                &nbsp;<asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="txtEndereco" ErrorMessage="Campo vazio." Font-Bold="True" Font-Names="Arial" Font-Size="15pt" ForeColor="Red"></asp:RequiredFieldValidator>
                 <br />
                 <br />
                 Email:
                 <asp:TextBox ID="txtEmail" runat="server"></asp:TextBox>
+                &nbsp;<asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtEmail" ErrorMessage="Campo vazio." Font-Bold="True" Font-Names="Arial" Font-Size="15pt" ForeColor="Red"></asp:RequiredFieldValidator>
+                <br />
+                <br />
+                Confirmar Email:
+                <asp:TextBox ID="txtConfirmaEmail" runat="server"></asp:TextBox>
+                &nbsp;<asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="txtConfirmaEmail" ErrorMessage="Campo vazio." Font-Bold="True" Font-Names="Arial" Font-Size="15pt" ForeColor="Red"></asp:RequiredFieldValidator>
                 <br />
                 <br />
                 <asp:Button ID="btnMulti1" runat="server" OnClick="btnMulti1_Click" Text="Próximo &gt;&gt;" />
