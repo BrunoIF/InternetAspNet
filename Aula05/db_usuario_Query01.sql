@@ -1,6 +1,6 @@
 create table tb_usuario_02(
-	Id_usuario int primary key identity(1,1),
-	Nome_usuario nvarchar(50) not null,
+	id_usuario int primary key identity(1,1),
+	nome_usuario nvarchar(50) not null,
 	email_usuario nvarchar(50) not null,
 	tel_usuario nvarchar(20) not null
 )
