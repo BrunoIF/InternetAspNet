@@ -13,12 +13,11 @@
     </div>
         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:3EMIAConnectionString %>" SelectCommand="SELECT * FROM [tb_usuario_02]"></asp:SqlDataSource>
         <br />
-        <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" CellPadding="4" DataKeyNames="Id_usuario" DataSourceID="SqlDataSource1" ForeColor="#333333" GridLines="None">
+        <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" CellPadding="4" DataKeyNames="id_usuario" DataSourceID="SqlDataSource1" ForeColor="#333333" GridLines="None">
             <AlternatingRowStyle BackColor="White" />
             <Columns>
-                <asp:CommandField ShowSelectButton="True" />
-                <asp:BoundField DataField="Id_usuario" HeaderText="Id_usuario" InsertVisible="False" ReadOnly="True" SortExpression="Id_usuario" />
-                <asp:BoundField DataField="Nome_usuario" HeaderText="Nome_usuario" SortExpression="Nome_usuario" />
+                <asp:BoundField DataField="id_usuario" HeaderText="id_usuario" InsertVisible="False" ReadOnly="True" SortExpression="id_usuario" />
+                <asp:BoundField DataField="nome_usuario" HeaderText="nome_usuario" SortExpression="nome_usuario" />
                 <asp:BoundField DataField="email_usuario" HeaderText="email_usuario" SortExpression="email_usuario" />
                 <asp:BoundField DataField="tel_usuario" HeaderText="tel_usuario" SortExpression="tel_usuario" />
             </Columns>
