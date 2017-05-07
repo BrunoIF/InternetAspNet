@@ -1,0 +1,30 @@
+﻿h3{
+    margin-bottom: 30px;
+}
+
+.title-container{
+    position: relative;
+}
+
+h3::after{
+    content: '';
+    width: 70px;
+    height: 5px;
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    background-color: #286090;
+}
+
+.form-container{
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+}
+
+.btn{
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+}
