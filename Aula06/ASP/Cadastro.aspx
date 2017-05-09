@@ -9,34 +9,40 @@
     <link href="Content/css/meu.css" rel="stylesheet" />
 </head>
 <body>
-    <form id="form1" runat="server">
-        <div class="form-container">
-            <div class="title-container">
-                <h3>Cadastro de Usuário</h3>
+    <div class="layer">
+        <form id="form1" runat="server">
+
+            <div class="form-container">
+                <div class="title-container">
+                    <h3>Cadastro de Usuário</h3>
+                    <div class="arrow"></div>
+                </div>
+                <div class="input-container">
+                    <div class="form-group">
+                        <label>Nome de Usuário:</label>
+                        &nbsp;<asp:TextBox ID="TextBox1" runat="server" CssClass="form-control"></asp:TextBox>
+                    </div>
+                    <div class="form-group">
+                        <label>Senha:</label>
+                        <asp:TextBox ID="TextBox2" runat="server" CssClass="form-control"></asp:TextBox>
+                    </div>
+                    <div class="form-group">
+                        <label>Email:</label>
+                        <asp:TextBox ID="TextBox3" runat="server" CssClass="form-control"></asp:TextBox>
+                    </div>
+                    <div class="form-group">
+                        <label>Nome:</label>
+                        <asp:TextBox ID="TextBox4" runat="server" CssClass="form-control"></asp:TextBox>
+                    </div>
+                    <div class="form-group">
+                        <label>Departamento:</label>
+                        <asp:DropDownList ID="DropDownList1" runat="server" CssClass="form-control">
+                        </asp:DropDownList>
+                    </div>
+                    <asp:Button ID="Button1" runat="server" CssClass="btn btn-primary" Text="Cadastrar" />
+                </div>
             </div>
-            <div class="form-group">
-                <label>Nome de Usuário:</label>
-                &nbsp;<asp:TextBox ID="TextBox1" runat="server" CssClass="form-control"></asp:TextBox>
-            </div>
-            <div class="form-group">
-                <label>Senha:</label>
-                <asp:TextBox ID="TextBox2" runat="server" CssClass="form-control"></asp:TextBox>
-            </div>
-            <div class="form-group">
-                <label>Email:</label>
-                <asp:TextBox ID="TextBox3" runat="server" CssClass="form-control"></asp:TextBox>
-            </div>
-            <div class="form-group">
-                <label>Nome:</label>
-                <asp:TextBox ID="TextBox4" runat="server" CssClass="form-control"></asp:TextBox>
-            </div>
-            <div class="form-group">
-                <label>Departamento:</label>
-                <asp:DropDownList ID="DropDownList1" runat="server" CssClass="form-control">
-                </asp:DropDownList>
-            </div>
-            <asp:Button ID="Button1" runat="server" CssClass="btn btn-primary" Text="Cadastrar" />
-        </div>
-    </form>
+        </form>
+    </div>
 </body>
 </html>
