@@ -5,7 +5,7 @@ html, body {
 }
 
 .layer {
-    /*background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);*/
+    background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
     min-height: 100%;
     min-width: 100%;
     position: absolute;
@@ -23,7 +23,7 @@ h3 {
 
 .title-container {
     position: relative;
-    /*background-color: #337ab7;*/
+    background-color: #337ab7;
     background-color: rgba(0,0,0,0.75);
     padding: 2px;
     margin-bottom: 30px;
@@ -35,8 +35,8 @@ h3 {
     position: absolute;
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
-    /*border-top: 20px solid #337ab7;*/
-    border-top: 20px solid rgba(0,0,0,0.75);
+    border-top: 20px solid #337ab7;
+    /*border-top: 20px solid rgba(0,0,0,0.75);*/
     left: 20px;
 }
 

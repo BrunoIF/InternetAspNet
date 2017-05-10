@@ -49,7 +49,7 @@ public partial class Cadastro : System.Web.UI.Page
             try
             {
                 InserirUsuario.ExecuteNonQuery();
-                con1.Close();
+                con.Close();
                 // alterar depois a linha abaixo
                 Response.Write("<script>alert('Usuário Cadastrado.');</script>");
             }

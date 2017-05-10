@@ -31,11 +31,11 @@
                         <label>Email:</label><asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ErrorMessage="Campo Vazio." ControlToValidate="txtEmail" Display="Dynamic"></asp:RequiredFieldValidator>
                         &nbsp;<asp:TextBox ID="txtEmail" runat="server" CssClass="form-control"></asp:TextBox>
                     </div>
-                    <div class="form-group">
+                    <%--<div class="form-group">
                         <label>Confirmar Email:</label><asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ErrorMessage="Campo Vazio." ControlToValidate="txtConfirmaEmail" Display="Dynamic"></asp:RequiredFieldValidator>
                         <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="txtConfirmaEmail" ErrorMessage="Email inválido."></asp:RegularExpressionValidator>
                         <asp:TextBox ID="txtConfirmaEmail" runat="server" CssClass="form-control"></asp:TextBox>
-                    </div>
+                    </div>--%>
                     <div class="form-group">
                         <label>Nome:</label>
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ErrorMessage="Campo Vazio." ControlToValidate="txtNome" Display="Dynamic"></asp:RequiredFieldValidator>
