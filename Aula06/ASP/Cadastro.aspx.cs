@@ -51,7 +51,8 @@ public partial class Cadastro : System.Web.UI.Page
                 InserirUsuario.ExecuteNonQuery();
                 con.Close();
                 // alterar depois a linha abaixo
-                Response.Write("<script>alert('Usuário Cadastrado.');</script>");
+                //Response.Write("<script>alert('Usuário Cadastrado.');</script>");
+                Response.Redirect("Login.aspx");
             }
             catch (Exception ex)
             {
