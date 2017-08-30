@@ -14,10 +14,36 @@ namespace DAL.Persistence
         protected SqlConnection con;
         protected SqlCommand cmd;
         protected SqlDataReader dr; // Tratar os registros obtidos nas queries
+
+        // Método para abrir a conexão
+        protected void AbrirConexao()
+        {
+            try
+            {
+                con = new SqlConnection("Data Source=sql.fiap.com.br;Initial Catalog=3EMIA;User ID=RM12294;Password=***********");
+                con.Open();
+            }
+            catch (Exception ex)
+            {
+
+                throw new Exception(ex.Message);
+            }
+        }
+
+        // Método para fechar a conexão
+        protected void FecharConexao()
+        {
+            try
+            {
+                con.Close();
+            }
+            catch (Exception ex)
+            {
+
+                throw new Exception(ex.Message);
+            }
+        }
     }
 
-    // Método para acessar a tabela
 
-
-    // Método para fechar a tabela
 }
