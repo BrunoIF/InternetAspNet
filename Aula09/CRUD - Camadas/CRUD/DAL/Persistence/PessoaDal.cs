@@ -15,6 +15,15 @@ namespace DAL.Persistence
         {
             try
             {
+                // Abrindo a conexão
+                AbrirConexao();
+
+                // Criar a query do insert e executar o método
+                cmd = new SqlCommand("insert into Pessoa02(Nome, Endereco, Email) values(@Nome, @Endereco, @Email)", con);
+                cmd.Parameters.AddWithValue("@Nome", p.Nome);
+                cmd.Parameters.AddWithValue("@Endereco", p.Endereco);
+                cmd.Parameters.AddWithValue("@Email", p.Email);
+                cmd.ExecuteNonQuery();
 
             }
             catch (Exception ex)
