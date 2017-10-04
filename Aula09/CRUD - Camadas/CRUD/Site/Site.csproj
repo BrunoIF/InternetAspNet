@@ -94,6 +94,9 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Atualizar.aspx" />
+    <Content Include="Cadastrar.aspx" />
+    <Content Include="Consultar.aspx" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -131,6 +134,27 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Atualizar.aspx.cs">
+      <DependentUpon>Atualizar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Atualizar.aspx.designer.cs">
+      <DependentUpon>Atualizar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastrar.aspx.cs">
+      <DependentUpon>Cadastrar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cadastrar.aspx.designer.cs">
+      <DependentUpon>Cadastrar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Consultar.aspx.cs">
+      <DependentUpon>Consultar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Consultar.aspx.designer.cs">
+      <DependentUpon>Consultar.aspx</DependentUpon>
+    </Compile>
     <Compile Include="index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

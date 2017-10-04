@@ -23,7 +23,7 @@
                             </asp:DropDownList>
                         </div>
                         <p>
-                            <asp:Button ID="btnAcessar" runat="server" Text="Acessar Opção >>" CssClass="btn btn-info btn-lg" />
+                            <asp:Button ID="btnAcessar" runat="server" Text="Acessar Opção >>" CssClass="btn btn-info btn-lg" OnClick="btnAcessar_Click" />
                         </p>
                         <h3>
                             <asp:Label ID="lblMensagem" runat="server" Text="" Visible="false" CssClass="label-danger"></asp:Label>
@@ -36,5 +36,7 @@
 
         </div>
     </form>
+    <script src="scripts/jquery-1.9.1.min.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
 </body>
 </html>
